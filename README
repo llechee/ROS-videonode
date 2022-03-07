@@ -1,0 +1,16 @@
+首先更改：~/video_ws/build里的 CMakeCache.txt和Makefile
+将路径名字修改为你自己的。vi下批量替换命令为 :%s/a/b/g （意思是把a换成b）
+修改之后 回到工作空间， 执行
+rosdep install --from-paths src --ignore-src --rosdistro=noetic -y
+随后catkin_make
+
+第一种方法:
+roslaunch usb_cam usb_cam-test.launch  (不需要运行roscore)
+第二种方法：
+rosrun usb_cam img_publisher #put vedio
+rosrun usb_cam img_viewer    #get video
+
+网络流：
+roslaunch web_video_server web_video.launch
+
+待补充

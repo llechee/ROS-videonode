@@ -11,6 +11,12 @@ rosrun usb_cam img_publisher #put vedio
 rosrun usb_cam img_viewer    #get video
 
 网络流：
+(需要配置一个文件)
+1. roscd web_video_server
+2. sudo mkdir launch
+3. cp ~/video_ws/web_video.launch /opt/ros/noetic/share/web_video_server/launch
+（根据自己路径改变）
 roslaunch web_video_server web_video.launch
+
 
 待补充

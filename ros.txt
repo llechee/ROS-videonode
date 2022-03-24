@@ -1,0 +1,14 @@
+图片部分:
+image test : rosrun image_transport_tutorial my_publisher /home/lz/catkin_ws/sdgfsdf.jpg
+
+# 运行节点 发布我的照片 (依赖opencv2以上)
+
+image test: rosrun image_transport_tutorial my_subscriber
+# 运行节点 接受发布的图像
+其他信息在 rostopic list -v 查找
+
+
+视频部分:
+
+rosrun usb_cam img_publisher    rosrun usb_cam img_viewer
+roslaunch web_video_server web_video_server.launch # 推送至局域网

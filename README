@@ -20,3 +20,19 @@ roslaunch web_video_server web_video.launch
 
 
 待补充
+
+# new 新方式
+```
+# 适用于ros noetic  环境 : Ubuntu20.04
+sudo apt install ros-noetic-cv-camera
+
+# 
+rosparam set cv_camera/device_id 0
+
+# 
+rosrun cv_camera cv_camera_node
+
+#
+rosrun web_video_server web_video_server
+```
+# 待补充
